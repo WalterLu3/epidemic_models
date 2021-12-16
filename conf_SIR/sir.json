@@ -1,0 +1,145 @@
+{
+  "theme": "browser",
+  "excelIncludeMeta": true,
+  "excelIncludeEmptySheets": true,
+  "defaultRendererOutput": "miroPivot",
+  "autoGenInputGraphs": true,
+  "storeLogFilesDuration": 7,
+  "defCompMode": "split",
+  "activateModules": {
+    "loadLocal": true,
+    "logFile": true,
+    "lstFile": true,
+    "attachments": true,
+    "downloadTempFiles": false
+  },
+  "aggregateWidgets": true,
+  "overwriteSheetOrder": {
+    "input": "_widgets"
+  },
+  "overwriteAliases": {
+    "_scalars": {
+      "newAlias": "Scalars"
+    },
+    "result": {
+      "newAlias": "result"
+    }
+  },
+  "saveTraceFile": true,
+  "roundingDecimals": 2,
+  "dataRendering": {
+    "result": {
+      "outType": "mirorenderer_result"
+    }
+  },
+  "inputWidgets": {
+    "objecttosolve": {
+      "widgetType": "dropdown",
+      "alias": "Objective",
+      "selected": "1",
+      "noHcube": false,
+      "clearValue": false,
+      "multiple": false,
+      "label": "Objective",
+      "choices": ["1", "-1"],
+      "aliases": ["cost", "continuity"]
+    },
+    "gammavalue": {
+      "widgetType": "slider",
+      "alias": "Gamma",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "step": 0.01,
+      "ticks": true,
+      "noHcube": false,
+      "label": "Gamma"
+    },
+    "s_start": {
+      "widgetType": "slider",
+      "alias": "Starting S",
+      "min": 0,
+      "max": 1,
+      "default": 0.7,
+      "step": 0.01,
+      "ticks": true,
+      "noHcube": false,
+      "label": "Starting S"
+    },
+    "i_start": {
+      "widgetType": "slider",
+      "alias": "Starting I",
+      "min": 0,
+      "max": 1,
+      "default": 0.15,
+      "step": 0.01,
+      "ticks": true,
+      "noHcube": false,
+      "label": "Starting I"
+    },
+    "r_start": {
+      "widgetType": "slider",
+      "alias": "Starting R",
+      "min": 0,
+      "max": 1,
+      "default": 0.15,
+      "step": 0.01,
+      "ticks": true,
+      "noHcube": false,
+      "label": "Starting R"
+    },
+    "s_end": {
+      "widgetType": "slider",
+      "alias": "Ending S",
+      "min": 0,
+      "max": 1,
+      "default": 0.45,
+      "step": 0.01,
+      "ticks": true,
+      "noHcube": false,
+      "label": "Ending S"
+    },
+    "i_end": {
+      "widgetType": "slider",
+      "alias": "Ending I",
+      "min": 0,
+      "max": 1,
+      "default": 0.05,
+      "step": 0.01,
+      "ticks": true,
+      "noHcube": false,
+      "label": "Ending I"
+    },
+    "r_end": {
+      "widgetType": "slider",
+      "alias": "Ending R",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "step": 0.01,
+      "ticks": true,
+      "noHcube": false,
+      "label": "Ending R"
+    }
+  },
+  "datatable": {
+    "class": "display",
+    "filter": "bottom",
+    "rownames": false,
+    "options": {
+      "pageLength": 15
+    }
+  },
+  "handsontable": {
+    "stretchH": "none",
+    "readonly": false,
+    "manualColumnResize": true,
+    "contextMenu": {
+      "enabled": true,
+      "allowRowEdit": true,
+      "allowColEdit": true
+    },
+    "height": 700,
+    "colWidths": 200
+  }
+}

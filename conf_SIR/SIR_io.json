@@ -1,0 +1,49 @@
+{
+	"modelTitle":	"SIR model",
+	"inputSymbols":	{
+		"_scalars":	{
+			"alias":	"Input Scalars",
+			"symnames":	["objecttosolve", "gammavalue", "s_start", "i_start", "r_start", "s_end", "i_end", "r_end"],
+			"symtext":	["1 is cost -1 is continuity", "gammavalue", "s_start", "i_start", "r_start", "s_end", "i_end", "r_end"],
+			"symtypes":	["parameter", "parameter", "parameter", "parameter", "parameter", "parameter", "parameter", "parameter"],
+			"headers":	{
+				"scalar":	{
+					"type":	"string",
+					"alias":	"Scalar Name"
+				},
+				"description":	{
+					"type":	"string",
+					"alias":	"Scalar Description"
+				},
+				"value":	{
+					"type":	"string",
+					"alias":	"Scalar Value"
+				}
+			}
+		}
+	},
+	"outputSymbols":	{
+		"result":	{
+			"alias":	"result",
+			"symtype":	"parameter",
+			"headers":	{
+				"state":	{
+					"type":	"string",
+					"alias":	"state"
+				},
+				"t":	{
+					"type":	"string",
+					"alias":	"Aliased with time"
+				},
+				"header":	{
+					"type":	"string",
+					"alias":	"header"
+				},
+				"value":	{
+					"type":	"numeric",
+					"alias":	"result"
+				}
+			}
+		}
+	}
+}
